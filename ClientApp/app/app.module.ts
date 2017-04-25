@@ -5,6 +5,7 @@ import { AppComponent } from './components/app/app.component'
 import { HomeComponent } from './components/home/home.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { AboutComponent } from './components/home/about.component';
+import { SidebarService } from './components/shared/sidebar/sidebar.service';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AboutComponent } from './components/home/about.component';
             { path: 'home', component: HomeComponent },
             { path: '**', redirectTo: 'home' }
         ])
-    ]
+    ],
+    providers: [SidebarService]
 })
 export class AppModule {
 }

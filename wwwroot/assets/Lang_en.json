@@ -1,0 +1,12 @@
+﻿{
+  "Language": "en",
+  "Sidebar": {
+    "Home": "Home",
+    "About": "About",
+    "Education": "Education",
+    "Experience": "Experience",
+    "Portfolio": "Portfolio",
+    "Journal": "Journal",
+    "Contact": "Contact"
+  }
+}

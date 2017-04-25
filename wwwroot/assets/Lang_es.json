@@ -1,0 +1,12 @@
+﻿{
+  "Language": "es",
+  "Sidebar": {
+    "Home": "Inicio",
+    "About": "Sobre mi",
+    "Education": "Educación",
+    "Experience": "Experiencia",
+    "Portfolio": "Portafolio",
+    "Journal": "Revista",
+    "Contact": "Contacto"
+  }
+}
