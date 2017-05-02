@@ -7,6 +7,13 @@
     "Experience": "Experiencia",
     "Portfolio": "Portafolio",
     "Journal": "Revista",
-    "Contact": "Contacto"
+    "Contact": "Contacto",
+    "Download": "Descargar CV"
+  },
+  "Header": {
+    "Hello": "Hola",
+    "Iam": "Yo soy",
+    "Prof": "Desarrollador .NET / Desarrollador C#",
+    "Description": "Quisque eu eleifend sapien. Sed et eros non nibh eleifend tempus. Sed rhoncus mauris in tellus viverra, in molestie turpis feugiat. Fusce massa massa, convallis ut elit ac, dictum porta odio. Aenean viverra neque id turpis maximus cursus. Etiam vitae mi eros. Duis vestibulum orci ex, in vulputate leo iaculis eget. Suspendisse suscipit tortor sit amet neque."
   }
 }

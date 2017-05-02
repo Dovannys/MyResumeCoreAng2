@@ -6,4 +6,5 @@
     public portfolio: string;
     public journal: string;
     public contact: string;
+    public download: string;
 }

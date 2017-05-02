@@ -14,5 +14,6 @@ namespace ResumeCVCoreAng2.Models
         public string Portfolio { get; set; }
         public string Journal { get; set; }
         public string Contact { get; set; }
+        public string Download { get; set; }
     }
 }

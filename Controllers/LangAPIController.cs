@@ -32,5 +32,12 @@ namespace ResumeCVCoreAng2.Controllers
             MyResume tmp = GetMyResumeLang(Id);
             return Json(tmp.Sidebar);
         }
+
+        [Route("header/{Id}")]
+        public JsonResult GetTitle(string Id)
+        {
+            MyResume tmp = GetMyResumeLang(Id);
+            return Json(tmp.Header);
+        }
     }
 }
