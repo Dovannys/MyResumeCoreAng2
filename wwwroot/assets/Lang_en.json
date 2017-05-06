@@ -15,5 +15,62 @@
     "Iam": "I am",
     "Prof": ".NET Developer / C# Developer",
     "Description": "Quisque eu eleifend sapien. Sed et eros non nibh eleifend tempus. Sed rhoncus mauris in tellus viverra, in molestie turpis feugiat. Fusce massa massa, convallis ut elit ac, dictum porta odio. Aenean viverra neque id turpis maximus cursus. Etiam vitae mi eros. Duis vestibulum orci ex, in vulputate leo iaculis eget. Suspendisse suscipit tortor sit amet neque."
+  },
+  "About": {
+    "AboutTit": "About",
+    "FullNameTit": "Full Name",
+    "BirthdateTit": "Birth Date",
+    "Birthdate": "Jan. 28, 1967",
+    "AddressTit": "Address",
+    "Address": "Av. La Prensa N60-41,Quito, Ecuador",
+    "Cert": {
+      "CertificTit": "Certifications",
+      "Certific": [
+        {
+          "CertTit": "Web Application Architectures",
+          "CertDesc": "This course was held online at Coursera.org. The course explores the development of web application architectures from an engineering perspective. Using Ruby on Rails as a language to better understand modern software engineering practices.",
+          "CertLink": "https://www.coursera.org/account/accomplishments/verify/FACG3GL9X3"
+        }
+      ]
+    },
+    "Skills": {
+      "SkillsTit": "Skills",
+      "SkillsLeft": [
+        {
+          "SkillTit": "C#",
+          "SkillVal": 90
+        },
+        {
+          "SkillTit": ".NET Framework",
+          "SkillVal": 75
+        },
+        {
+          "SkillTit": "T-SQL",
+          "SkillVal": 55
+        },
+        {
+          "SkillTit": "ASP.NET MVC",
+          "SkillVal": 85
+        }
+      ],
+      "SkillsRight": [
+        {
+          "SkillTit": "HTML5",
+          "SkillVal": 60
+        },
+        {
+          "SkillTit": "CSS",
+          "SkillVal": 35
+        },
+        {
+          "SkillTit": "JavaScript",
+          "SkillVal": 45
+        },
+        {
+          "SkillTit": "JQuery",
+          "SkillVal": 55
+        }
+      ]
+    }
   }
 }

@@ -10,5 +10,6 @@ namespace ResumeCVCoreAng2.Models
         public string Language { get; set; }
         public SidebarModel Sidebar { get; set; }
         public HeaderModel Header { get; set; }
+        public AboutModel About { get; set; }
     }
 }

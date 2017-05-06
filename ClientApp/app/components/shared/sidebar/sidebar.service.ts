@@ -20,4 +20,10 @@ export class SidebarService {
             .map((response: Response) => response.json())
             .toPromise();
     }
+
+    getAbout(id: string) {
+        return this.http.get('api/LangAPI/about/' + id)
+            .map((response: Response) => response.json())
+            .toPromise();
+    }
 }

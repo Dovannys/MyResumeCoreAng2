@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ResumeCVCoreAng2.Models
+﻿namespace ResumeCVCoreAng2.Models
 {
     public class HeaderModel
     {
