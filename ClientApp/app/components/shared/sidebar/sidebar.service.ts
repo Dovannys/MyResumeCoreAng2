@@ -26,4 +26,16 @@ export class SidebarService {
             .map((response: Response) => response.json())
             .toPromise();
     }
+
+    getEducation(id: string) {
+        return this.http.get('api/LangAPI/education/' + id)
+            .map((response: Response) => response.json())
+            .toPromise();
+    }
+
+    getExperience(id: string) {
+        return this.http.get('api/LangAPI/experience/' + id)
+            .map((response: Response) => response.json())
+            .toPromise();
+    }
 }

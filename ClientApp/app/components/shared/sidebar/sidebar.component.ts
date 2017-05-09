@@ -1,6 +1,8 @@
-﻿import { Component, OnInit, Input } from '@angular/core';
+﻿import { Component, OnInit, Input} from '@angular/core';
 import { SidebarType } from './sidebar.type';
 import { SidebarService } from './sidebar.service';
+import { Ng2ScrollableDirective } from 'ng2-scrollable'
+import { scrollTo } from 'ng2-utils';
 
 
 @Component({
@@ -24,5 +26,14 @@ export class SidebarComponent implements OnInit {
     ngOnInit(): void {
         this.sidebarService.getSidebarMenu(this.lang)
             .then(menu => this.sidebarMenu = menu);        
+    }
+
+    scrollTo(selector, parentSelector) {
+        scrollTo(
+            selector,       // scroll to this
+            parentSelector, // scroll within (null if window scrolling)
+            false,     // is it horizontal scrolling
+            0               // distance from top or left
+        );
     }
 }

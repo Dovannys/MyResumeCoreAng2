@@ -28,7 +28,7 @@
       "Certific": [
         {
           "CertTit": "Web Application Architectures",
-          "CertDesc": "Este curso se realizó en línea en Coursera.org. El curso explora el desarrollo de arquitecturas de aplicación web desde una perspectiva de ingeniería. Uso de Ruby on Rails como lenguaje para entender mejor las prácticas moderna de ingeniería de software.",
+          "CertDesc": "Este curso se realizó en línea en Coursera.org. El curso explora el desarrollo de arquitecturas de aplicación web desde una perspectiva de ingeniería. Uso de Ruby on Rails como lenguaje para entender las prácticas modernas de ingeniería de software.",
           "CertLink": "https://www.coursera.org/account/accomplishments/verify/FACG3GL9X3"
         }
       ]
@@ -72,5 +72,71 @@
         }
       ]
     }
+  },
+  "Education": {
+    "EducationTit": "Educación",
+    "Educations": [
+      {
+        "EdYears": "1985-1989",
+        "EdCollege": "Colegio Estatal Politécnico de Minsk",
+        "EdTit": "Bachiller de Tecnología",
+        "EdPlace": "Minsk, Bielorusia",
+        "EdDescription": ""
+      }
+    ]
+  },
+  "Experience": {
+    "ExperienceTit": "Experiencia",
+    "Experiences": [
+      {
+        "ExYears": "2013-Presente",
+        "ExCompany": "Seguros del Pichincha (SDP)",
+        "ExTit": "Ejecutivo de Desarrollo Tecnológico",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "2013-2013",
+        "ExCompany": "Logic Studio",
+        "ExTit": "Desarrollador Senior",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "2012-2013",
+        "ExCompany": "Intergrupo",
+        "ExTit": "Ingeniero de Desarrollo",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "2011-2012",
+        "ExCompany": "Globalware S.A.",
+        "ExTit": "Desarrollador de Software",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "2010-2010",
+        "ExCompany": "León y Asociados",
+        "ExTit": "Desarrollador de Software",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "1997-2009",
+        "ExCompany": "CUBALSE S.A.",
+        "ExTit": "Analista Informático",
+        "ExPlace": "La Habana, Cuba",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "1989-1997",
+        "ExCompany": "CEDAI",
+        "ExTit": "Tecnólogo en Sistemas",
+        "ExPlace": "La Habana, Cuba",
+        "ExDescription": ""
+      }
+    ]
   }
 }

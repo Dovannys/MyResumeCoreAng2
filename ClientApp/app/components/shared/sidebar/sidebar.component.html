@@ -4,25 +4,33 @@
         <li class="sidebar-brand">
             <a href="#"><img src="/images/my-img.png" alt=""></a>
         </li>
-        <li *ngIf="sidebarMenu.home">
-            <a class="menu-item page-scroll" href="home/{{lang}}#home">{{sidebarMenu.home}}</a>
+        <li>
+            <div [class.current]="id=='home'" (click)="scrollTo('#home','#v-scrollable')" class="menu-item">
+                {{sidebarMenu.home}}
+            </div>
         </li>
-        <li *ngIf="sidebarMenu.about">
-            <a class="menu-item page-scroll" href="home/{{lang}}#about">{{sidebarMenu.about}}</a>
+        <li>
+            <div [class.current]="id=='about'" (click)="scrollTo('#about','#v-scrollable')" class="menu-item">
+                {{sidebarMenu.about}}
+            </div>
         </li>
-        <li *ngIf="sidebarMenu.education">
-            <a class="menu-item page-scroll" href="#education">{{sidebarMenu.education}}</a>
+        <li>
+            <div [class.current]="id=='education'" (click)="scrollTo('#education','#v-scrollable')" class="menu-item">
+                {{sidebarMenu.education}}
+            </div>
         </li>
-        <li *ngIf="sidebarMenu.experience">
-            <a class="menu-item page-scroll" href="#experience">{{sidebarMenu.experience}}</a>
+        <li>
+            <div [class.current]="id=='experience'" (click)="scrollTo('#experience','#v-scrollable')" class="menu-item">
+                {{sidebarMenu.experience}}
+            </div>
         </li>
-        <li *ngIf="sidebarMenu.portfolio">
+        <li>
             <a class="menu-item page-scroll" href="#portfolio">{{sidebarMenu.portfolio}}</a>
         </li>
-        <li *ngIf="sidebarMenu.journal">
+        <li>
             <a class="menu-item page-scroll" href="#journal">{{sidebarMenu.journal}}</a>
         </li>
-        <li *ngIf="sidebarMenu.contact">
+        <li>
             <a class="menu-item page-scroll" href="#contact">{{sidebarMenu.contact}}</a>
         </li>
         <li class="menu-footer">
@@ -34,4 +42,3 @@
         </li>
     </ul>
 </div>
-<!-- / side navigation -->

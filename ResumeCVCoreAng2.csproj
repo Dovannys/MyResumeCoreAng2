@@ -20,24 +20,17 @@
   <ItemGroup>
     <!-- Files not to show in IDE -->
     <None Remove="yarn.lock" />
+    <Compile Remove="wwwroot\dist\fonts\**" />
 
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="ClientApp\**" />
+    <Content Remove="wwwroot\dist\fonts\**" />
+    <EmbeddedResource Remove="wwwroot\dist\fonts\**" />
+    <None Remove="wwwroot\dist\fonts\**" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="wwwroot\assets\Lang_en.json" />
     <Content Include="wwwroot\assets\Lang_es.json" />
-    <Content Include="wwwroot\dist\fonts\fontawesome-webfont.eot" />
-    <Content Include="wwwroot\dist\fonts\fontawesome-webfont.svg" />
-    <Content Include="wwwroot\dist\fonts\fontawesome-webfont.ttf" />
-    <Content Include="wwwroot\dist\fonts\fontawesome-webfont.woff" />
-    <Content Include="wwwroot\dist\fonts\fontawesome-webfont.woff2" />
-    <Content Include="wwwroot\dist\fonts\FontAwesome.otf" />
-    <Content Include="wwwroot\dist\fonts\Linearicons-Free.eot" />
-    <Content Include="wwwroot\dist\fonts\Linearicons-Free.svg" />
-    <Content Include="wwwroot\dist\fonts\Linearicons-Free.ttf" />
-    <Content Include="wwwroot\dist\fonts\Linearicons-Free.woff" />
-    <Content Include="wwwroot\dist\fonts\Linearicons-Free.woff2" />
     <Content Include="wwwroot\images\my-img.png" />
   </ItemGroup>
   <ItemGroup>

@@ -108,6 +108,7 @@ li {
   letter-spacing: 0.5px;
 }
 
+
 blockquote {
   border-left: 5px solid #ebebeb;
 }
@@ -2351,4 +2352,21 @@ footer .container {
   #portfolio .col-xs-6 {
     width: 100%;
   }
+}
+
+.main-demo .sidebar-nav div.menu-item{
+    color:white;
+    cursor:pointer;
+}
+
+.sidebar-nav div.menu-item{
+    display:block;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:400;
+    padding:10px;
+}
+
+.main-demo .sidebar-nav div:hover{
+    color:#0266a7;
 }

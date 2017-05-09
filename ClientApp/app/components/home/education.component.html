@@ -1,0 +1,25 @@
+﻿<!-- education -->
+<section id="education" *ngIf="education">
+    <div class="container">
+        <div class="page-header">
+            <h3>{{education.educationTit}}<span class="text-primary">.</span></h3>
+        </div>
+        <div class="timeline  border-color">
+            <div class="timeline-item" *ngFor="let edu of education.educations">
+                <div class="timeline-point  off-timeline-point  point-color"></div>
+                <div class="row">
+                    <div class="col-md-3 timeline-info">
+                        <p class="timeline-date">{{edu.edYears}}</p>
+                        <h4 class="timeline-com">{{edu.edCollege}}</h4>
+                        <h6 class="timeline-role">{{edu.edTit}}</h6>
+                        <p class="timeline-location">{{edu.edPlace}}</p>
+                    </div><!-- / timeline-info -->
+                    <div class="col-md-9 timeline-details">
+                        <p>{{edu.edDescription}}</p>
+                    </div><!-- / timeline-details -->
+                </div><!-- / row -->
+            </div><!-- / timeline-item -->
+        </div><!-- / timeline -->
+    </div><!-- / container -->
+</section>
+<!-- / education -->

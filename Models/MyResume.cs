@@ -11,5 +11,7 @@ namespace ResumeCVCoreAng2.Models
         public SidebarModel Sidebar { get; set; }
         public HeaderModel Header { get; set; }
         public AboutModel About { get; set; }
+        public EducationModel Education { get; set; }
+        public ExperienceModel Experience { get; set; }
     }
 }
