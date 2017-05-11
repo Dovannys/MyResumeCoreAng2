@@ -8,6 +8,7 @@ import { AboutComponent } from './components/home/about.component';
 import { HeaderComponent } from './components/home/header.component';
 import { EducationComponent } from './components/home/education.component';
 import { ExperienceComponent } from './components/home/experience.component';
+import { PortfolioComponent } from './components/home/portfolio.component';
 import { SidebarService } from './components/shared/sidebar/sidebar.service';
 import { Ng2ScrollableModule } from 'ng2-scrollable';
 
@@ -21,6 +22,7 @@ import { Ng2ScrollableModule } from 'ng2-scrollable';
         AboutComponent,
         EducationComponent,
         ExperienceComponent,
+        PortfolioComponent,
         HeaderComponent
     ],
     imports: [

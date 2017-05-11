@@ -51,6 +51,10 @@
         {
           "SkillTit": "ASP.NET MVC",
           "SkillVal": 85
+        },
+        {
+          "SkillTit": ".NET Core",
+          "SkillVal": "15"
         }
       ],
       "SkillsRight": [
@@ -60,7 +64,7 @@
         },
         {
           "SkillTit": "CSS",
-          "SkillVal": 35
+          "SkillVal": 25
         },
         {
           "SkillTit": "JavaScript",
@@ -69,6 +73,10 @@
         {
           "SkillTit": "JQuery",
           "SkillVal": 55
+        },
+        {
+          "SkillTit": "Angular 2",
+          "SkillVal": "20"
         }
       ]
     }
@@ -136,6 +144,16 @@
         "ExTit": "System technologist",
         "ExPlace": "Havana, Cuba",
         "ExDescription": ""
+      }
+    ]
+  },
+  "Portfolio": {
+    "PortfolioTit": "Portfolio",
+    "PathImages": "/images/",
+    "Projects": [
+      {
+        "ProjectImage": "1Project_en.jpg",
+        "ProjectTit": "My first Resume on the Web. I realized it for the purpose of learning technologies like Angular 2 and .NET Core"
       }
     ]
   }

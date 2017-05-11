@@ -25,7 +25,9 @@
             </div>
         </li>
         <li>
-            <a class="menu-item page-scroll" href="#portfolio">{{sidebarMenu.portfolio}}</a>
+            <div [class.current]="id=='portfolio'" (click)="scrollTo('#portfolio','#v-scrollable')" class="menu-item">
+                {{sidebarMenu.portfolio}}
+            </div>
         </li>
         <li>
             <a class="menu-item page-scroll" href="#journal">{{sidebarMenu.journal}}</a>

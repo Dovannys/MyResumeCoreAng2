@@ -13,5 +13,6 @@ namespace ResumeCVCoreAng2.Models
         public AboutModel About { get; set; }
         public EducationModel Education { get; set; }
         public ExperienceModel Experience { get; set; }
+        public PortfolioModel Portfolio { get; set; }
     }
 }

@@ -51,6 +51,10 @@
         {
           "SkillTit": "ASP.NET MVC",
           "SkillVal": 85
+        },
+        {
+          "SkillTit": ".NET Core",
+          "SkillVal": "15"
         }
       ],
       "SkillsRight": [
@@ -69,6 +73,10 @@
         {
           "SkillTit": "JQuery",
           "SkillVal": 55
+        },
+        {
+          "SkillTit": "Angular 2",
+          "SkillVal": "20"
         }
       ]
     }
@@ -136,6 +144,16 @@
         "ExTit": "Tecnólogo en Sistemas",
         "ExPlace": "La Habana, Cuba",
         "ExDescription": ""
+      }
+    ]
+  },
+  "Portfolio": {
+    "PortfolioTit": "Portafolio",
+    "PathImages": "/images/",
+    "Projects": [
+      {
+        "ProjectImage": "1Project_es.jpg",
+        "ProjectTit": "Mi primer curriculum en Web. Lo realizé con fines de aprendizaje de tecnologías como Angular 2 y .NET Core"
       }
     ]
   }

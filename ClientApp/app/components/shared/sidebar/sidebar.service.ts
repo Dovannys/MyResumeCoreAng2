@@ -38,4 +38,10 @@ export class SidebarService {
             .map((response: Response) => response.json())
             .toPromise();
     }
+
+    getPortfolio(id: string) {
+        return this.http.get('api/LangAPI/portfolio/' + id)
+            .map((response: Response) => response.json())
+            .toPromise();
+    }
 }
