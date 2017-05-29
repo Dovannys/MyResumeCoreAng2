@@ -1,0 +1,21 @@
+﻿<!-- journal -->
+<section id="journal">
+    <div class="container" *ngIf="journal">
+        <div class="page-header space-left">
+            <h3>{{journal.journalTit}}<span class="text-primary">.</span></h3>
+        </div>
+        <ul class="row portfolio list-unstyled" *ngFor="let post of journal.posts">
+            <li class="col-xs-6 col-md-4 project">
+                <figure>
+                    <div class="blog block carousel-post">
+                        <img class="img-responsive" src="{{post.postImg}}" />
+                        <h5>{{post.postTit}}</h5>
+                        <p>{{post.postDetail}}</p>
+                    </div>
+                </figure>
+            </li>
+            <li class="col-xs-6 col-md-4 shuffle_sizer"></li>
+        </ul>
+    </div><!-- / container -->
+</section>
+<!-- / journal -->

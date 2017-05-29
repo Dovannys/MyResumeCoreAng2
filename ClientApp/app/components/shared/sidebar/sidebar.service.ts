@@ -44,4 +44,16 @@ export class SidebarService {
             .map((response: Response) => response.json())
             .toPromise();
     }
+
+    getJournal(id: string) {
+        return this.http.get('api/LangAPI/journal/' + id)
+            .map((response: Response) => response.json())
+            .toPromise();
+    }
+
+    getContact(id: string) {
+        return this.http.get('api/LangAPI/contact/' + id)
+            .map((response: Response) => response.json())
+            .toPromise();
+    }
 }

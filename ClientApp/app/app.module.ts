@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { UniversalModule } from 'angular2-universal';
-import { AppComponent } from './components/app/app.component'
+import { AppComponent } from './components/app/app.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { HomeComponent } from './components/home/home.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { AboutComponent } from './components/home/about.component';
@@ -9,6 +11,8 @@ import { HeaderComponent } from './components/home/header.component';
 import { EducationComponent } from './components/home/education.component';
 import { ExperienceComponent } from './components/home/experience.component';
 import { PortfolioComponent } from './components/home/portfolio.component';
+import { JournalComponent } from './components/home/journal.component';
+import { ContactComponent } from './components/home/contact.component';
 import { SidebarService } from './components/shared/sidebar/sidebar.service';
 import { Ng2ScrollableModule } from 'ng2-scrollable';
 
@@ -23,6 +27,8 @@ import { Ng2ScrollableModule } from 'ng2-scrollable';
         EducationComponent,
         ExperienceComponent,
         PortfolioComponent,
+        JournalComponent,
+        ContactComponent,
         HeaderComponent
     ],
     imports: [
@@ -32,6 +38,8 @@ import { Ng2ScrollableModule } from 'ng2-scrollable';
             { path: 'home/:id', component: HomeComponent },
             { path: '**', redirectTo: 'home/en' }
         ]),
+        ReactiveFormsModule,
+        HttpModule,
         Ng2ScrollableModule
     ],
     providers: [SidebarService]

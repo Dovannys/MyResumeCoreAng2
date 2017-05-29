@@ -156,5 +156,33 @@
         "ProjectTit": "My first Resume on the Web. I realized it for the purpose of learning technologies like Angular 2 and .NET Core"
       }
     ]
+  },
+  "Journal": {
+    "JournalTit": "Journal",
+    "Posts": [
+      {
+        "PostTit": "Interview about telecommuting",
+        "PostDetail": "Interview on the Ecuadorian Teleamazonas TV channel (TA). About remote work, out of office.",
+        "PostImg": "/images/Teletrabajo-1.jpg",
+        "PostVideo": ""
+      }
+    ]
+  },
+  "Contact": {
+    "ContactTit": "Contact",
+    "DescTit": "Contact Description",
+    "Description": "I was born in Cuba but currently live in Quito, capital of Ecuador. I have been living in this country since the end of 2009.",
+    "TeleTit": "Telephone",
+    "TeleDesc": "+593991043935",
+    "EmailTit": "Email",
+    "EmailDesc": "dovannys@gmail.com",
+    "HAddressTit": "Home Address",
+    "HAddressDesc": "Av. La Prensa N60-41, Quito, Ecuador",
+    "OAddressTit": "Office Address",
+    "OAddressDesc": "Av. República, Edificio BGR, Piso 11",
+    "NameHolder": "Full Name",
+    "EmailHolder": "Email",
+    "MessageHolder": "Message",
+    "SendButton": "Send Message"
   }
 }

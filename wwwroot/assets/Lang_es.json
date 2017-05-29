@@ -156,5 +156,33 @@
         "ProjectTit": "Mi primer curriculum en Web. Lo realizé con fines de aprendizaje de tecnologías como Angular 2 y .NET Core"
       }
     ]
+  },
+  "Journal": {
+    "JournalTit": "Revista",
+    "Posts": [
+      {
+        "PostTit": "Entrevista sobre Teletrabajo",
+        "PostDetail": "Entrevista en el canal de TV Ecuatoriano Teleamazonas (TA). Acerca del trabajo remoto, fuera de oficina.",
+        "PostImg": "/images/Teletrabajo-1.jpg",
+        "PostVideo": ""
+      }
+    ]
+  },
+  "Contact": {
+    "ContactTit": "Contacto",
+    "DescTit": "Descripción de Contacto",
+    "Description": "Nací en Cuba pero en la actualidad vivo en Quito, capital de Ecuador. Resido en este país desde finales de 2009.",
+    "TeleTit": "Teléfono",
+    "TeleDesc": "+593991043935",
+    "EmailTit": "Correo Electrónico",
+    "EmailDesc": "dovannys@gmail.com",
+    "HAddressTit": "Direccción Vivienda",
+    "HAddressDesc": "Av. La Prensa N60-41, Quito, Ecuador",
+    "OAddressTit": "Dirección Oficina",
+    "OAddressDesc": "Av. República, Edificio BGR, Piso 11",
+    "NameHolder": "Nombre completo",
+    "EmailHolder": "Correo Electrónico",
+    "MessageHolder": "Mensaje",
+    "SendButton": "Enviar Mensaje"
   }
 }
