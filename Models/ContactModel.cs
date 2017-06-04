@@ -22,5 +22,6 @@ namespace ResumeCVCoreAng2.Models
         public string EmailHolder { get; set; }
         public string MessageHolder { get; set; }
         public string SendButton { get; set; }
+        public string TextSendedOk { get; set; }
     }
 }

@@ -31,14 +31,28 @@ export class ContactComponent implements OnInit {
         this.sidebarService.getContact(this.lang)
             .then(ex => this.contact = ex);
         var current = new Date().getFullYear();
-        this.year = current.toString();
+        this.year = current.toString();       
     }
 
     doMessage(event) {
         console.log(event);
         console.log(this.contactForm.value);
 
-        let name = this.contactForm.controls.name.value;
-        console.log(name);
+        try {
+            //TODO Enviar mensaje a través de un servicio
+            let name = this.contactForm.controls.name.value;
+            console.log(name);
+
+            //Emito un aviso al usuario
+            alert(this.contact.textSendedOk);
+        }
+        catch (e) {
+            alert(e.message);
+        }
+
+        //Limpiar los campos en la pantalla
+        (<HTMLInputElement>document.getElementById("name")).value = '';
+        (<HTMLInputElement>document.getElementById("email")).value = '';
+        (<HTMLInputElement>document.getElementById("message")).value = '';
     }
 }

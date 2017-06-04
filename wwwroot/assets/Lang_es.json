@@ -183,6 +183,7 @@
     "NameHolder": "Nombre completo",
     "EmailHolder": "Correo Electrónico",
     "MessageHolder": "Mensaje",
-    "SendButton": "Enviar Mensaje"
+    "SendButton": "Enviar Mensaje",
+    "TextSendedOk": "Se ha enviado correctamente el mensaje."
   }
 }

@@ -14,4 +14,5 @@
     public emailHolder: string;
     public messageHolder: string;
     public sendButton: string;
+    public textSendedOk: string;
 }

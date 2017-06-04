@@ -183,6 +183,7 @@
     "NameHolder": "Full Name",
     "EmailHolder": "Email",
     "MessageHolder": "Message",
-    "SendButton": "Send Message"
+    "SendButton": "Send Message",
+    "TextSendedOk": "The message was successfully sent."
   }
 }
