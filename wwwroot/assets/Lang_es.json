@@ -164,7 +164,8 @@
         "PostTit": "Entrevista sobre Teletrabajo",
         "PostDetail": "Entrevista en el canal de TV Ecuatoriano Teleamazonas (TA). Acerca del trabajo remoto, fuera de oficina.",
         "PostImg": "/images/Teletrabajo-1.jpg",
-        "PostVideo": ""
+        "PostVideo": "/images/Teletrabajo-Teleamazonas.mp4",
+        "PostVideoType": "video/mp4"
       }
     ]
   },

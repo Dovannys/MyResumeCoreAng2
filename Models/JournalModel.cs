@@ -11,6 +11,7 @@ namespace ResumeCVCoreAng2.Models
         public string PostDetail { get; set; }
         public string PostImg { get; set; }
         public string PostVideo { get; set; }
+        public string PostVideoType { get; set; }
     }
     public class JournalModel
     {

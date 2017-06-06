@@ -24,4 +24,8 @@ export class HeaderComponent implements OnInit {
         this.sidebarService.getHeader(this.lang)
             .then(head => this.header = head);
     }
+
+    toggleMenu() {
+        (<HTMLDivElement>document.getElementById("wrapper")).classList.toggle("toggled");
+    }
 }

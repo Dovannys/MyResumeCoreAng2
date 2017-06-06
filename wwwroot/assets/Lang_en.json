@@ -164,7 +164,8 @@
         "PostTit": "Interview about telecommuting",
         "PostDetail": "Interview on the Ecuadorian Teleamazonas TV channel (TA). About remote work, out of office.",
         "PostImg": "/images/Teletrabajo-1.jpg",
-        "PostVideo": ""
+        "PostVideo": "",
+        "PostVideoType": ""
       }
     ]
   },

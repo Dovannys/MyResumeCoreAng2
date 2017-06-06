@@ -3,6 +3,7 @@
     public postDetail: string;
     public postImg: string;
     public postVideo: string;
+    public postVideoType: string;
 }
 
 export class JournalType {

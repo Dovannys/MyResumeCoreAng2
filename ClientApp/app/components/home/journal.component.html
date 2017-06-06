@@ -8,7 +8,15 @@
             <li class="col-xs-6 col-md-4 project">
                 <figure>
                     <div class="blog block carousel-post">
-                        <img class="img-responsive" src="{{post.postImg}}" />
+                        <ng-container *ngIf="post.postVideo">
+                            <video class="img-responsive" poster="{{post.postImg}}" controls>
+                                <source src="{{post.postVideo}}" type="{{post.postVideoType}}"/>
+                                Video tag not supported.
+                            </video>
+                        </ng-container>
+                        <ng-container *ngIf="!post.postVideo">
+                            <img class="img-responsive" src="{{post.postImg}}" />
+                        </ng-container>                            
                         <h5>{{post.postTit}}</h5>
                         <p>{{post.postDetail}}</p>
                     </div>

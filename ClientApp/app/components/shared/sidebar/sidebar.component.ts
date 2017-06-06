@@ -12,6 +12,7 @@ import { scrollTo } from 'ng2-utils';
 export class SidebarComponent implements OnInit {
     sidebarMenu: SidebarType;
     private _lang: string;
+    withResp: boolean;
 
     @Input() set lang(name: string) {
         this._lang = name;
@@ -23,9 +24,25 @@ export class SidebarComponent implements OnInit {
     constructor(private sidebarService: SidebarService) {
     }
 
+    responsiveSidebar() {
+        if (window.outerWidth < 784) {
+            (<HTMLBodyElement>document.getElementById("body")).classList.add("icon-nav");
+            this.withResp = true;
+        }
+        else {
+            (<HTMLBodyElement>document.getElementById("body")).classList.remove("icon-nav");
+            this.withResp = false;
+        }
+    }
+
     ngOnInit(): void {
         this.sidebarService.getSidebarMenu(this.lang)
-            .then(menu => this.sidebarMenu = menu);        
+            .then(menu => this.sidebarMenu = menu);
+        this.responsiveSidebar();
+    }
+
+    onResize(event) {
+        this.responsiveSidebar();
     }
 
     scrollTo(selector, parentSelector) {
