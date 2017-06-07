@@ -1913,7 +1913,7 @@ hr, .border-color {
   background: transparent;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 20%;
   width: 100%;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;

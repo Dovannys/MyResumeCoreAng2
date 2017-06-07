@@ -29,9 +29,13 @@
     <None Remove="wwwroot\dist\fonts\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="wwwroot/images\Teletrabajo-Teleamazonas.mp4" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="wwwroot\assets\Lang_en.json" />
     <Content Include="wwwroot\assets\Lang_es.json" />
     <Content Include="wwwroot\images\my-img.png" />
+    <Content Include="wwwroot\images\Teletrabajo-Teleamazonas.mp4" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\images\my-img.png" />

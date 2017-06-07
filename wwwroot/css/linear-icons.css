@@ -365,6 +365,8 @@
 }
 .lnr-menu:before {
 	content: "\e871";
+    position:fixed;
+    left: 7px;
 }
 .lnr-list:before {
 	content: "\e872";
