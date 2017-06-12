@@ -41,7 +41,11 @@ export class ContactComponent implements OnInit {
         try {
             //TODO Enviar mensaje a través de un servicio
             let name = this.contactForm.controls.name.value;
-            console.log(name);
+            let email = this.contactForm.controls.email.value;
+            let message = this.contactForm.controls.message.value;
+            //console.log(name);
+
+            this.sidebarService.sendMessage(name, email, message);
 
             //Emito un aviso al usuario
             alert(this.contact.textSendedOk);

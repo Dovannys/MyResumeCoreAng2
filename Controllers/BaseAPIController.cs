@@ -29,5 +29,14 @@ namespace ResumeCVCoreAng2.Controllers
             result = JsonConvert.DeserializeObject<MyResume>(r);
             return result;
         }
+
+        protected EmailConfigModel GetEmailConfig()
+        {
+            var result = new EmailConfigModel();
+            var arch = _env.WebRootPath + @"/assets/Email_config.json";
+            String r = System.IO.File.ReadAllText(arch);
+            result = JsonConvert.DeserializeObject<EmailConfigModel>(r);
+            return result;
+        }
     }
 }

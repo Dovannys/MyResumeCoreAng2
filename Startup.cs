@@ -37,6 +37,7 @@ namespace ResumeCVCoreAng2
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+            //loggerFactory.AddFile("Logs/myResume-{Date}.txt");
 
             if (env.IsDevelopment())
             {

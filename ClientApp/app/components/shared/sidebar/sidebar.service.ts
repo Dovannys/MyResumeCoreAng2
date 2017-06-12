@@ -56,4 +56,10 @@ export class SidebarService {
             .map((response: Response) => response.json())
             .toPromise();
     }
+
+    sendMessage(name: string, email: string, message: string) {
+        return this.http.get('api/EmailAPI/sendmessage?name=' + name + '&email=' + email + '&message=' + message)
+            .map((response: Response) => response.json())
+            .toPromise();
+    }
 }
