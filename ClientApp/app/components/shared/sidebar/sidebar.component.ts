@@ -1,8 +1,8 @@
-﻿import { Component, OnInit, Input} from '@angular/core';
+﻿import { Component, OnInit, Input, Inject} from '@angular/core';
 import { SidebarType } from './sidebar.type';
 import { SidebarService } from './sidebar.service';
-import { Ng2ScrollableDirective } from 'ng2-scrollable'
-import { scrollTo } from 'ng2-utils';
+import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ng2-page-scroll';
+import { DOCUMENT } from "@angular/platform-browser";
 
 
 @Component({
@@ -21,7 +21,7 @@ export class SidebarComponent implements OnInit {
         return this._lang;
     }
 
-    constructor(private sidebarService: SidebarService) {
+    constructor(private sidebarService: SidebarService, private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any) {
     }
 
     responsiveSidebar() {
@@ -46,11 +46,9 @@ export class SidebarComponent implements OnInit {
     }
 
     scrollTo(selector, parentSelector) {
-        scrollTo(
-            selector,       // scroll to this
-            parentSelector, // scroll within (null if window scrolling)
-            false,     // is it horizontal scrolling
-            0               // distance from top or left
-        );
+        //console.log("selector: "+selector+" parentSelector: "+parentSelector);
+
+        let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, selector);
+        this.pageScrollService.start(pageScrollInstance);
     }
 }

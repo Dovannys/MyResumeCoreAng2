@@ -38,7 +38,7 @@
             <li>
                 <div [class.current]="id=='contact'" (click)="scrollTo('#contact','#v-scrollable')" class="menu-item">
                     <i class="lnr lnr-envelope"></i>
-                </div>
+                </div>                
             </li>
             <li class="menu-footer">
                 <h6>&nbsp;<i class="lnr lnr-download"></i>&nbsp;</h6>
@@ -53,6 +53,7 @@
                 <div [class.current]="id=='home'" (click)="scrollTo('#home','#v-scrollable')" class="menu-item">
                     {{sidebarMenu.home}}
                 </div>
+                <!--<a class="menu-item page-scroll" href="home/{{lang}}#home">{{sidebarMenu.home}}</a>-->
             </li>
             <li>
                 <div [class.current]="id=='about'" (click)="scrollTo('#about','#v-scrollable')" class="menu-item">
