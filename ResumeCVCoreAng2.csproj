@@ -3,6 +3,7 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+    <RuntimeIdentifiers>win10-x64;osx.10.12-x64;ubuntu.14.04-x64</RuntimeIdentifiers>
     <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
@@ -22,6 +23,8 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Files not to show in IDE -->
+    <None Remove="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Remove="yarn.lock" />
     <Compile Remove="wwwroot\dist\fonts\**" />
 
@@ -36,15 +39,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="wwwroot\assets\Email_config.json" />
-    <Content Include="wwwroot\assets\Lang_en.json" />
-    <Content Include="wwwroot\assets\Lang_es.json" />
-    <Content Include="wwwroot\images\my-img.png" />
-    <Content Include="wwwroot\images\Teletrabajo-Teleamazonas.mp4" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\images\my-img.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\fonts\" />
   </ItemGroup>

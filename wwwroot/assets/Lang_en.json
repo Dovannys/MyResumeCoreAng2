@@ -14,7 +14,7 @@
     "Hello": "Hello",
     "Iam": "I am",
     "Prof": ".NET Developer / C# Developer",
-    "Description": "Quisque eu eleifend sapien. Sed et eros non nibh eleifend tempus. Sed rhoncus mauris in tellus viverra, in molestie turpis feugiat. Fusce massa massa, convallis ut elit ac, dictum porta odio. Aenean viverra neque id turpis maximus cursus. Etiam vitae mi eros. Duis vestibulum orci ex, in vulputate leo iaculis eget. Suspendisse suscipit tortor sit amet neque."
+    "Description": "As a full stack developer, I am an enthusiast of tools with Microsoft technology. I like to see finished products that bring value in the lives of human beings. To interact with the user I like Web technology. This allows you to reach many devices in the world. For the back I have done services, both Web and Windows. They provide interoperability and monitoring to enterprise systems. In general I enjoy the process of developing all kinds of software projects."
   },
   "About": {
     "AboutTit": "About",
@@ -162,7 +162,7 @@
     "Posts": [
       {
         "PostTit": "Interview about telecommuting",
-        "PostDetail": "Interview on the Ecuadorian Teleamazonas TV channel (TA). About remote work, out of office.",
+        "PostDetail": "Interview on the Ecuadorian Teleamazonas TV channel (TA). About remote work, out of office. (To see full interview, please switch to spanish version of this page)",
         "PostImg": "/images/Teletrabajo-1.jpg",
         "PostVideo": "",
         "PostVideoType": ""

@@ -45,8 +45,8 @@ export class SidebarComponent implements OnInit {
         this.responsiveSidebar();
     }
 
-    scrollTo(selector, parentSelector) {
-        //console.log("selector: "+selector+" parentSelector: "+parentSelector);
+    scrollTo(selector) {
+        //console.log("selector: "+selector+");
 
         let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, selector);
         this.pageScrollService.start(pageScrollInstance);
