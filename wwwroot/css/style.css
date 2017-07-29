@@ -1909,15 +1909,18 @@ hr, .border-color {
 }
 
 .hovereffect-title h6, .hovereffect-title h5 {
-  color: white;
-  background: transparent;
-  text-align: center;
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  padding: 10px;
+    color: white;
+    background: transparent;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hovereffect-title h5 {
