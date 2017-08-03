@@ -1,10 +1,27 @@
-@{
-    ViewData["Title"] = "Dovannys Hernandez";
-}
-<link rel="stylesheet" href="http://tawian.io/text-spinners/spinners.css">
-<app asp-ng2-prerender-module="ClientApp/dist/main-server"><h1>Loading<span class="loading dots3"></span></h1></app>
 
+<link rel="stylesheet" href="http://tawian.io/text-spinners/spinners.css">
+<app asp-ng2-prerender-module="ClientApp/dist/main-server"><h1> <br /> &nbsp; <i id="hourglass" class="fa" aria-hidden="true"></i><span class="loading dots3"></span></h1></app>
+
+<script>
+    //HourGlass Animation
+    function changeHourglas() {
+        let hourglass = document.getElementById('hourglass');
+        hourglass.innerHTML = "&#xf251;";
+        setTimeout(function () {
+            hourglass.innerHTML = "&#xf252;";
+        }, 1000);
+        setTimeout(function () {
+            hourglass.innerHTML = "&#xf253;";
+        }, 2000);
+    }
+
+    //Run Animation
+    changeHourglas();
+
+    setInterval(changeHourglas, 3000);
+</script>
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
+
 @section scripts {
     <script src="~/dist/main-client.js" asp-append-version="true"></script>
 }

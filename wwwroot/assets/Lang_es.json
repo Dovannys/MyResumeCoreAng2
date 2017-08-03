@@ -55,6 +55,10 @@
         {
           "SkillTit": ".NET Core",
           "SkillVal": "15"
+        },
+        {
+          "SkillTit": "SOAP Services",
+          "SkillVal": "55"
         }
       ],
       "SkillsRight": [
@@ -77,6 +81,10 @@
         {
           "SkillTit": "Angular 2",
           "SkillVal": "20"
+        },
+        {
+          "SkillTit": "REST Services",
+          "SkillVal": "45"
         }
       ]
     }
@@ -172,7 +180,7 @@
   "Contact": {
     "ContactTit": "Contacto",
     "DescTit": "Descripción de Contacto",
-    "Description": "Nací en Cuba pero en la actualidad vivo en Quito, capital de Ecuador. Resido en este país desde finales de 2009.",
+    "Description": "Nací en Cuba pero en la actualidad vivo en Quito, capital de Ecuador. Lugar donde resido desde finales del año 2009.",
     "TeleTit": "Teléfono",
     "TeleDesc": "+593991043935",
     "EmailTit": "Correo Electrónico",

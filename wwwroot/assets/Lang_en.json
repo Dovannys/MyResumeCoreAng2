@@ -55,6 +55,10 @@
         {
           "SkillTit": ".NET Core",
           "SkillVal": "15"
+        },
+        {
+          "SkillTit": "SOAP Services",
+          "SkillVal": "55"
         }
       ],
       "SkillsRight": [
@@ -77,6 +81,10 @@
         {
           "SkillTit": "Angular 2",
           "SkillVal": "20"
+        },
+        {
+          "SkillTit": "REST Services",
+          "SkillVal": "45"
         }
       ]
     }
@@ -98,7 +106,7 @@
     "Experiences": [
       {
         "ExYears": "2013-Present",
-        "ExCompany": "Insurance of Pichincha (SDP)",
+        "ExCompany": "Seguros del Pichincha (SDP)",
         "ExTit": "Technological Development Executive",
         "ExPlace": "Quito, Ecuador",
         "ExDescription": ""
