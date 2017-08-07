@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
-    <RuntimeIdentifiers>win10-x64;osx.10.12-x64;ubuntu.14.04-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>win10-x64;osx.10.12-x64;ubuntu.14.04-x64;ubuntu.16.04-x64;</RuntimeIdentifiers>
     <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
