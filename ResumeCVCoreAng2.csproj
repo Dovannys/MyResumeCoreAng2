@@ -35,6 +35,7 @@
     <None Remove="wwwroot\dist\fonts\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="wwwroot/assets\Email_config.json" />
     <Content Remove="wwwroot/images\Teletrabajo-Teleamazonas.mp4" />
   </ItemGroup>
   <!--<ItemGroup>
