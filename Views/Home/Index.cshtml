@@ -4,24 +4,35 @@
 
 <script>
     //HourGlass Animation
+    var myTime;
+    var myInterval
     function changeHourglas() {
-        let hourglass = document.getElementById('hourglass');
-        hourglass.innerHTML = "&#xf251;";
-        setTimeout(function () {
-            hourglass.innerHTML = "&#xf252;";
-        }, 1000);
-        setTimeout(function () {
-            hourglass.innerHTML = "&#xf253;";
-        }, 2000);
+        var hourglass = document.getElementById('hourglass');
+        if(hourglass == null){
+            if(myTime != null)
+                clearTimeout(myTime);
+            if(myInterval != null)
+                clearInterval(myInterval);
+        }
+        else{
+            hourglass.innerHTML = "&#xf251;";
+            myTime = setTimeout(function () {
+                hourglass.innerHTML = "&#xf252;";
+            }, 1000);
+            myTime = setTimeout(function () {
+                hourglass.innerHTML = "&#xf253;";
+            }, 2000);
+        }
     }
 
     //Run Animation
     changeHourglas();
 
-    setInterval(changeHourglas, 3000);
+    myInterval = setInterval(changeHourglas, 3000);
 </script>
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 
 @section scripts {
     <script src="~/dist/main-client.js" asp-append-version="true"></script>
+    <script src="~/js/Site.js"></script>
 }
