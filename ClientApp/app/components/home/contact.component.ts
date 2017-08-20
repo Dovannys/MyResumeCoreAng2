@@ -35,8 +35,8 @@ export class ContactComponent implements OnInit {
     }
 
     doMessage(event) {
-        console.log(event);
-        console.log(this.contactForm.value);
+        //console.log(event);
+        //console.log(this.contactForm.value);
 
         try {
             //TODO Enviar mensaje a través de un servicio
@@ -45,18 +45,17 @@ export class ContactComponent implements OnInit {
             let message = this.contactForm.controls.message.value;
             //console.log(name);
 
-            this.sidebarService.sendMessage(name, email, message);
-
-            //Emito un aviso al usuario
-            alert(this.contact.textSendedOk);
+            this.sidebarService.sendMessage(name, email, message)
+                .then(ex => {
+                    (ex == "OK") ? alert(this.contact.textSendedOk) : alert(ex);
+                    //Limpiar los campos en la pantalla
+                    (<HTMLInputElement>document.getElementById("name")).value = '';
+                    (<HTMLInputElement>document.getElementById("email")).value = '';
+                    (<HTMLInputElement>document.getElementById("message")).value = '';
+                });
         }
         catch (e) {
             alert(e.message);
         }
-
-        //Limpiar los campos en la pantalla
-        (<HTMLInputElement>document.getElementById("name")).value = '';
-        (<HTMLInputElement>document.getElementById("email")).value = '';
-        (<HTMLInputElement>document.getElementById("message")).value = '';
     }
 }

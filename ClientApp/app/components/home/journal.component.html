@@ -7,7 +7,7 @@
         <ul class="row portfolio list-unstyled" *ngFor="let post of journal.posts">
             <li class="col-xs-6 col-md-4 project">
                 <figure>
-                    <div class="blog block carousel-post">
+                    <div class="blog block">
                         <ng-container *ngIf="post.postVideo">
                             <video class="img-responsive" poster="{{post.postImg}}" controls>
                                 <source src="{{post.postVideo}}" type="{{post.postVideoType}}"/>
