@@ -48,7 +48,7 @@ namespace ResumeCVCoreAng2.Controllers
 
                 try
                 {
-                    client.Connect(tmp.Host, tmp.Port, SecureSocketOptions.SslOnConnect);
+                    client.Connect(tmp.Host, tmp.Port, true);
                 }
                 catch (SmtpCommandException ex)
                 {
