@@ -39,7 +39,7 @@ export class ContactComponent implements OnInit {
         //console.log(this.contactForm.value);
 
         try {
-            //TODO Enviar mensaje a través de un servicio
+            // Enviar mensaje a través de un servicio
             let name = this.contactForm.controls.name.value;
             let email = this.contactForm.controls.email.value;
             let message = this.contactForm.controls.message.value;

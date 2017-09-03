@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e0a0587decbeabc2ec40"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "20a2bea28b97b2cee4d7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -13580,7 +13580,7 @@ var ContactComponent = (function () {
         //console.log(this.contactForm.value);
         var _this = this;
         try {
-            //TODO Enviar mensaje a través de un servicio
+            // Enviar mensaje a través de un servicio
             var name_1 = this.contactForm.controls.name.value;
             var email = this.contactForm.controls.email.value;
             var message = this.contactForm.controls.message.value;
