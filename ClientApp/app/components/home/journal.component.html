@@ -9,7 +9,7 @@
                 <figure>
                     <div class="blog block">
                         <ng-container *ngIf="post.postVideo">
-                            <video class="img-responsive" poster="{{post.postImg}}" controls>
+                            <video class="img-responsive" poster="{{post.postImg}}" controls with="360" height="200">
                                 <source src="{{post.postVideo}}" type="{{post.postVideoType}}"/>
                                 Video tag not supported.
                             </video>

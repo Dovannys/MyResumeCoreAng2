@@ -161,7 +161,15 @@
     "Projects": [
       {
         "ProjectImage": "1Project_en.jpg",
-        "ProjectTit": "My first Resume on the Web. I realized it for the purpose of learning technologies like Angular 2 and .NET Core"
+        "ProjectTit": "My first Resume on the Web. I realized it for the purpose of learning technologies like Angular 2 and .NET Core."
+      },
+      {
+        "ProjectImage": "OtrosIngresos.jpg",
+        "ProjectTit": "Application made with ASP.NET MVC(Visual C #, Jquery, Bootstrap, SSRS from MSSQL Server 2012) for electronic billing in an insurance company."
+      },
+      {
+        "ProjectImage": "PortalDE.jpg",
+        "ProjectTit": "Portal of electronic documents for clients."
       }
     ]
   },

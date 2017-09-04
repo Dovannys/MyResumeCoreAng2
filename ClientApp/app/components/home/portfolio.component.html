@@ -4,18 +4,16 @@
         <div class="page-header space-left">
             <h3>{{portfolio.portfolioTit}}<span class="text-primary">.</span></h3>
         </div>
-        <ul class="row portfolio list-unstyled" id="grid" *ngFor="let port of portfolio.projects">
-            <li class="col-xs-6 col-md-4 project" data-groups='["design", "creative"]'>
+        <ul class="row portfolio list-unstyled" id="grid">
+            <li class="col-xs-6 col-md-4 project" data-groups='["design", "creative"]' *ngFor="let port of portfolio.projects">
                 <figure>
                     <div class="hovereffect">
                         <img class="img-responsive" attr.src="{{portfolio.pathImages+port.projectImage}}">
-                        <!--<a href="single-project.html">-->
                             <div class="overlay">
                                 <div class="hovereffect-title">
                                     <h6>{{port.projectTit}}</h6>
                                 </div>
                             </div>
-                        <!--</a>-->
                     </div>
                 </figure>
             </li><!-- project -->

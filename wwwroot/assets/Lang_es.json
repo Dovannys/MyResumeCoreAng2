@@ -161,7 +161,15 @@
     "Projects": [
       {
         "ProjectImage": "1Project_es.jpg",
-        "ProjectTit": "Mi primer curriculum en Web. Lo realizé con fines de aprendizaje de tecnologías como Angular 2 y .NET Core"
+        "ProjectTit": "Mi primer curriculum en Web. Lo realizé con fines de aprendizaje de tecnologías como Angular 2 y .NET Core."
+      },
+      {
+        "ProjectImage": "OtrosIngresos.jpg",
+        "ProjectTit": "Aplicación realizada con ASP.NET MVC (Visual C #, Jquery, Bootstrap, SSRS de MSSQL Server 2012) para facturación electrónica en una empresa de seguros."
+      },
+      {
+        "ProjectImage": "PortalDE.jpg",
+        "ProjectTit": "Portal de documetos electrónicos para los clientes."
       }
     ]
   },
