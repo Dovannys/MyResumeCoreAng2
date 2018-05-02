@@ -3,6 +3,7 @@
   "Sidebar": {
     "Home": "Home",
     "About": "About",
+    "Skills": "Skills",
     "Education": "Education",
     "Experience": "Experience",
     "Portfolio": "Portfolio",
@@ -14,7 +15,7 @@
     "Hello": "Hello",
     "Iam": "I am",
     "Prof": ".NET Developer / C# Developer",
-    "Description": "As a full stack developer, I am an enthusiast of tools with Microsoft technology. I like to see finished products that bring value in the lives of human beings. To interact with the user I like Web technology. This allows you to reach many devices in the world. For the back I have done services, both Web and Windows. They provide interoperability and monitoring to enterprise systems. In general I enjoy the process of developing all kinds of software projects."
+    "Description": "As a full stack developer, I am an enthusiast of tools with Microsoft technology. I like to see finished products that bring value in the lives of human beings. To interact with the user I like Web technology. This allows you to reach many devices in the world. For the backend I have done services, both Web and Windows. They provide interoperability and monitoring to enterprise systems. In general I enjoy the process of developing all kinds of software projects."
   },
   "About": {
     "AboutTit": "About",
@@ -161,15 +162,15 @@
     "Projects": [
       {
         "ProjectImage": "1Project_en.jpg",
-        "ProjectTit": "My first Resume on the Web. I realized it for the purpose of learning technologies like Angular 2 and .NET Core."
+        "ProjectTit": "My first Resume on the Web. I realized it for the purpose of learning technologies like Angular 2 and .NET Core.It is fully responsive."
       },
       {
         "ProjectImage": "OtrosIngresos.jpg",
-        "ProjectTit": "Application made with ASP.NET MVC(Visual C #, Jquery, Bootstrap, SSRS from MSSQL Server 2012) for electronic billing in an insurance company."
+        "ProjectTit": "Application made with ASP.NET MVC(Visual C#), Jquery, Bootstrap, SSRS from MSSQL Server 2012. This is a electronic billing application for an insurance company."
       },
       {
         "ProjectImage": "PortalDE.jpg",
-        "ProjectTit": "Portal of electronic documents for clients."
+        "ProjectTit": "Portal of electronic documents for clients. Builded with ASP.NET MVC(C# Language), JQuery, Bootstrap, MSSQL Server 2014. This is an interface for clients application."
       }
     ]
   },

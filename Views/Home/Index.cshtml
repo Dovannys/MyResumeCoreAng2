@@ -1,34 +1,41 @@
 
-<link rel="stylesheet" href="http://tawian.io/text-spinners/spinners.css">
-<app asp-ng2-prerender-module="ClientApp/dist/main-server"><h1> <br /> &nbsp; <i id="hourglass" class="fa" aria-hidden="true"></i><span class="loading dots3"></span></h1></app>
+@*<link rel="stylesheet" href="https://maxbeier.github.io/text-spinners/spinners.css">
+<app asp-ng2-prerender-module="ClientApp/dist/main-server"><h1> <br /> &nbsp; <i id="hourglass" class="fa" aria-hidden="true"></i><span class="loading dots3"></span></h1></app>*@
 
+<link rel="stylesheet" href="~/css/Spinners.css">
+<app asp-ng2-prerender-module="ClientApp/dist/main-server"></app>
 <script>
-    //HourGlass Animation
-    var myTime;
-    var myInterval
-    function changeHourglas() {
-        var hourglass = document.getElementById('hourglass');
-        if(hourglass == null){
-            if(myTime != null)
-                clearTimeout(myTime);
-            if(myInterval != null)
-                clearInterval(myInterval);
-        }
-        else{
-            hourglass.innerHTML = "&#xf251;";
-            myTime = setTimeout(function () {
-                hourglass.innerHTML = "&#xf252;";
-            }, 1000);
-            myTime = setTimeout(function () {
-                hourglass.innerHTML = "&#xf253;";
-            }, 2000);
-        }
+    ////HourGlass Animation
+    //var myTime;
+    //var myInterval
+    //function changeHourglas() {
+    //    var hourglass = document.getElementById('hourglass');
+    //    if(hourglass == null){
+    //        if(myTime != null)
+    //            clearTimeout(myTime);
+    //        if(myInterval != null)
+    //            clearInterval(myInterval);
+    //    }
+    //    else{
+    //        hourglass.innerHTML = "&#xf251;";
+    //        myTime = setTimeout(function () {
+    //            hourglass.innerHTML = "&#xf252;";
+    //        }, 1000);
+    //        myTime = setTimeout(function () {
+    //            hourglass.innerHTML = "&#xf253;";
+    //        }, 2000);
+    //    }
+    //}
+
+    ////Run Animation
+    //changeHourglas();
+
+    //myInterval = setInterval(changeHourglas, 3000);
+
+    document.querySelector('body').classList.add('spinner-3');
+    window.onload = function () {
+        document.querySelector('body').classList.remove('spinner-3');
     }
-
-    //Run Animation
-    changeHourglas();
-
-    myInterval = setInterval(changeHourglas, 3000);
 </script>
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 

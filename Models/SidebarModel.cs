@@ -9,6 +9,7 @@ namespace ResumeCVCoreAng2.Models
     {
         public string Home { get; set; }
         public string About { get; set; }
+        public string Skills { get; set; }
         public string Education { get; set; }
         public string Experience { get; set; }
         public string Portfolio { get; set; }

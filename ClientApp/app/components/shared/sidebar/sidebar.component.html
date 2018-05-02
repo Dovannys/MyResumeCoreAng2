@@ -16,6 +16,11 @@
                 </div>
             </li>
             <li>
+                <div [class.current]="id=='skills'" (click)="scrollTo('#skills')" class="menu-item">
+                    <i class="lnr lnr-chart-bars"></i>
+                </div>
+            </li>
+            <li>
                 <div [class.current]="id=='education'" (click)="scrollTo('#education')" class="menu-item">
                     <i class="lnr lnr-graduation-hat"></i>
                 </div>
@@ -38,7 +43,7 @@
             <li>
                 <div [class.current]="id=='contact'" (click)="scrollTo('#contact')" class="menu-item">
                     <i class="lnr lnr-envelope"></i>
-                </div>                
+                </div>
             </li>
             <li class="menu-footer">
                 <!--<h6>&nbsp;<i class="lnr lnr-download"></i>&nbsp;</h6>-->
@@ -58,6 +63,11 @@
             <li>
                 <div [class.current]="id=='about'" (click)="scrollTo('#about')" class="menu-item">
                     {{sidebarMenu.about}}
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='skills'" (click)="scrollTo('#skills')" class="menu-item">
+                    {{sidebarMenu.skills}}
                 </div>
             </li>
             <li>
