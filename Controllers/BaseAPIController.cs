@@ -18,6 +18,10 @@ namespace ResumeCVCoreAng2.Controllers
         }
         protected MyResume GetMyResumeLang(string lang)
         {
+            if(string.IsNullOrEmpty(lang))
+            {
+                throw new ArgumentException("Language Id can't be null or empty.");
+            }
             var result = new MyResume();
             var arch = _env.WebRootPath + @"/assets/Lang_" + lang.Trim() + ".json";
             String r = System.IO.File.ReadAllText(arch);
