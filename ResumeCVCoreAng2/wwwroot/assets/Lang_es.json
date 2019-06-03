@@ -1,0 +1,210 @@
+﻿{
+  "Language": "es",
+  "Sidebar": {
+    "Home": "Inicio",
+    "About": "Sobre mi",
+    "Skills": "Habilidades",
+    "Education": "Educación",
+    "Experience": "Experiencia",
+    "Portfolio": "Portafolio",
+    "Journal": "Revista",
+    "Contact": "Contacto",
+    "Download": "Descargar CV"
+  },
+  "Header": {
+    "Hello": "Hola",
+    "Iam": "Yo soy",
+    "Prof": "Desarrollador .NET / Desarrollador C#",
+    "Description": "Como desarrollador Full Stack, soy un entusiasta de las herramientas con tecnologia de Microsoft. Me gusta ver productos terminados y que aporten valor en la vida de los seres humanos. Para interactuar con el usuario me gusta la tecnologia Web. Esta permite llegar a muchos dispositivos en el mundo. Para el backend he realizado servicios, tanto Web como Windows. Que proveen de interoperabilidad y monitoreo a sistemas empresariales. En general disfruto del proceso de desarrollo de todo tipo de proyectos de software."
+  },
+  "About": {
+    "AboutTit": "Sobre mi",
+    "FullNameTit": "Nombre Completo",
+    "BirthdateTit": "Fecha de Nacimiento",
+    "Birthdate": "28 de Enero de 1967",
+    "AddressTit": "Dirección",
+    "Address": "Ave. La Prensa N60-41,Quito, Ecuador",
+    "Cert": {
+      "CertificTit": "Certificaciones",
+      "Certific": [
+        {
+          "CertTit": "Web Application Architectures",
+          "CertDesc": "Este curso se realizó en línea en Coursera.org. El curso explora el desarrollo de arquitecturas de aplicación web desde una perspectiva de ingeniería. Uso de Ruby on Rails como lenguaje para entender las prácticas modernas de ingeniería de software.",
+          "CertLink": "https://www.coursera.org/account/accomplishments/verify/FACG3GL9X3"
+        }
+      ]
+    },
+    "Skills": {
+      "SkillsTit": "Habilidades",
+      "SkillsLeft": [
+        {
+          "SkillTit": "C#",
+          "SkillVal": 80
+        },
+        {
+          "SkillTit": ".NET Framework",
+          "SkillVal": 75
+        },
+        {
+          "SkillTit": "T-SQL",
+          "SkillVal": 50
+        },
+        {
+          "SkillTit": "ASP.NET MVC",
+          "SkillVal": 75
+        },
+        {
+          "SkillTit": ".NET Core",
+          "SkillVal": 30
+        },
+        {
+          "SkillTit": "SOAP Services",
+          "SkillVal": 65
+        }
+      ],
+      "SkillsRight": [
+        {
+          "SkillTit": "HTML5",
+          "SkillVal": 35
+        },
+        {
+          "SkillTit": "CSS",
+          "SkillVal": 30
+        },
+        {
+          "SkillTit": "JavaScript",
+          "SkillVal": 35
+        },
+        {
+          "SkillTit": "JQuery",
+          "SkillVal": 55
+        },
+        {
+          "SkillTit": "Angular 2",
+          "SkillVal": 20
+        },
+        {
+          "SkillTit": "REST Services",
+          "SkillVal": 55
+        }
+      ]
+    }
+  },
+  "Education": {
+    "EducationTit": "Educación",
+    "Educations": [
+      {
+        "EdYears": "1985-1989",
+        "EdCollege": "Colegio Estatal Politécnico de Minsk",
+        "EdTit": "Bachiller de Tecnología",
+        "EdPlace": "Minsk, Bielorusia",
+        "EdDescription": ""
+      }
+    ]
+  },
+  "Experience": {
+    "ExperienceTit": "Experiencia",
+    "Experiences": [
+      {
+        "ExYears": "2013-Presente",
+        "ExCompany": "Seguros del Pichincha (SDP)",
+        "ExTit": "Ejecutivo de Desarrollo Tecnológico",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "2013-2013",
+        "ExCompany": "Logic Studio",
+        "ExTit": "Desarrollador Senior",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "2012-2013",
+        "ExCompany": "Intergrupo",
+        "ExTit": "Ingeniero de Desarrollo",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "2011-2012",
+        "ExCompany": "Globalware S.A.",
+        "ExTit": "Desarrollador de Software",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "2010-2010",
+        "ExCompany": "León y Asociados",
+        "ExTit": "Desarrollador de Software",
+        "ExPlace": "Quito, Ecuador",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "1997-2009",
+        "ExCompany": "CUBALSE S.A.",
+        "ExTit": "Analista Informático",
+        "ExPlace": "La Habana, Cuba",
+        "ExDescription": ""
+      },
+      {
+        "ExYears": "1989-1997",
+        "ExCompany": "CEDAI",
+        "ExTit": "Tecnólogo en Sistemas",
+        "ExPlace": "La Habana, Cuba",
+        "ExDescription": ""
+      }
+    ]
+  },
+  "Portfolio": {
+    "PortfolioTit": "Portafolio",
+    "PathImages": "/images/",
+    "Projects": [
+      {
+        "ProjectImage": "1Project_es.jpg",
+        "ProjectTit": "Mi primer curriculum en Web. Lo realizé con fines de aprendizaje de tecnologías como Angular 2 y .NET Core. Este proyecto es completamente responsivo, visible desde cualquier dispositivo."
+      },
+      {
+        "ProjectImage": "OtrosIngresos.jpg",
+        "ProjectTit": "Aplicación realizada con ASP.NET MVC (Visual C#), Jquery, Bootstrap, SSRS de MSSQL Server 2012. Esta es una aplicacion de facturación electrónica para una empresa de seguros."
+      },
+      {
+        "ProjectImage": "PortalDE.jpg",
+        "ProjectTit": "Portal de documentos electrónicos para los clientes. Construido con ASP.NET MVC(Lenguaje C#), JQuery, Bootstrap, MSSQL Server 2014. Esta aplicacion es una interface para clientes."
+      }
+    ]
+  },
+  "Journal": {
+    "JournalTit": "Revista",
+    "Posts": [
+      {
+        "PostTit": "Entrevista sobre Teletrabajo",
+        "PostDetail": "Entrevista en el canal de TV Ecuatoriano Teleamazonas (TA). Acerca del trabajo remoto, fuera de oficina.",
+        "PostImg": "/images/Teletrabajo-1.jpg",
+        "PostVideo": "/images/Teletrabajo-Teleamazonas.mp4",
+        "PostVideoType": "video/mp4"
+      }
+    ]
+  },
+  "Contact": {
+    "ContactTit": "Contacto",
+    "DescTit": "Descripción de Contacto",
+    "Description": "Nací en Cuba pero en la actualidad vivo en Quito, capital de Ecuador. Lugar donde resido desde finales del año 2009.",
+    "TeleTit": "Teléfono",
+    "TeleDesc": "+593998238819",
+    "EmailTit": "Correo Electrónico",
+    "EmailDesc": "dovannys@gmail.com",
+    "HAddressTit": "Direccción Vivienda",
+    "HAddressDesc": "Av. La Prensa N60-41, Quito, Ecuador",
+    "OAddressTit": "Dirección Oficina",
+    "OAddressDesc": "Av. República, Edificio BGR, Piso 11",
+    "NameHolder": "Nombre completo",
+    "EmailHolder": "Correo Electrónico",
+    "MessageHolder": "Mensaje",
+    "SendButton": "Enviar Mensaje",
+    "TextSendedOk": "Se ha enviado correctamente el mensaje."
+  },
+  "Download": {
+    "PathCV": "/assets/cv_Dovannys_Hernández_Morales_es.pdf"
+  }
+}

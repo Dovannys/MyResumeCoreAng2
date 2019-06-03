@@ -1,0 +1,107 @@
+<!-- side navigation -->
+<div id="sidebar-wrapper" (window:resize)="onResize($event)" class="animated slideInLeft">
+    <ul class="sidebar-nav" *ngIf="sidebarMenu">
+        <li class="sidebar-brand">
+            <a href="#"><img src="/images/my-img.png" alt=""></a>
+        </li>
+        <ng-container *ngIf="withResp">
+            <li>
+                <div [class.current]="id=='home'" (click)="scrollTo('#home')" class="menu-item">
+                    <i class="lnr lnr-home"></i>
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='about'" (click)="scrollTo('#about')" class="menu-item">
+                    <i class="lnr lnr-user"></i>
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='skills'" (click)="scrollTo('#skills')" class="menu-item">
+                    <i class="lnr lnr-chart-bars"></i>
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='education'" (click)="scrollTo('#education')" class="menu-item">
+                    <i class="lnr lnr-graduation-hat"></i>
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='experience'" (click)="scrollTo('#experience')" class="menu-item">
+                    <i class="lnr lnr-briefcase"></i>
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='portfolio'" (click)="scrollTo('#portfolio')" class="menu-item">
+                    <i class="lnr lnr-picture"></i>
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='journal'" (click)="scrollTo('#journal')" class="menu-item">
+                    <i class="lnr lnr-pushpin"></i>
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='contact'" (click)="scrollTo('#contact')" class="menu-item">
+                    <i class="lnr lnr-envelope"></i>
+                </div>
+            </li>
+            <li class="menu-footer">
+              <div class="menu-item" (click)="doDownload($event)"><h6>&nbsp;<i class="lnr lnr-download"></i>&nbsp;</h6></div>                            
+              <span>
+                <a href="home/en"><img src="/images/eng.png" alt="english"></a>
+                <a href="home/es"><img src="/images/sp.png" alt="spanish"></a>
+              </span>
+            </li>
+        </ng-container>
+        <ng-container *ngIf="!withResp">
+            <li>
+                <div [class.current]="id=='home'" (click)="scrollTo('#home')" class="menu-item">
+                    {{sidebarMenu.home}}
+                </div>
+                <!--<a class="menu-item page-scroll" href="home/{{lang}}#home">{{sidebarMenu.home}}</a>-->
+            </li>
+            <li>
+                <div [class.current]="id=='about'" (click)="scrollTo('#about')" class="menu-item">
+                    {{sidebarMenu.about}}
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='skills'" (click)="scrollTo('#skills')" class="menu-item">
+                    {{sidebarMenu.skills}}
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='education'" (click)="scrollTo('#education')" class="menu-item">
+                    {{sidebarMenu.education}}
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='experience'" (click)="scrollTo('#experience')" class="menu-item">
+                    {{sidebarMenu.experience}}
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='portfolio'" (click)="scrollTo('#portfolio')" class="menu-item">
+                    {{sidebarMenu.portfolio}}
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='journal'" (click)="scrollTo('#journal')" class="menu-item">
+                    {{sidebarMenu.journal}}
+                </div>
+            </li>
+            <li>
+                <div [class.current]="id=='contact'" (click)="scrollTo('#contact')" class="menu-item">
+                    {{sidebarMenu.contact}}
+                </div>
+            </li>
+            <li class="menu-footer">
+                <div (click)="doDownload($event)" class="menu-item"><h6><i class="lnr lnr-download"></i>{{sidebarMenu.download}}</h6></div>
+                <span>
+                    <a href="home/en">ENGLISH</a>
+                    <a href="home/es">ESPAÑOL</a>
+                </span>
+            </li>
+        </ng-container>
+    </ul>
+</div>
