@@ -23,7 +23,7 @@
     "BirthdateTit": "Birth Date",
     "Birthdate": "Jan. 28, 1967",
     "AddressTit": "Address",
-    "Address": "Av. La Prensa N60-41,Quito, Ecuador",
+    "Address": "St. Pedro G. Moreno N59-158,Quito, Ecuador",
     "Cert": {
       "CertificTit": "Certifications",
       "Certific": [
@@ -39,7 +39,7 @@
       "SkillsLeft": [
         {
           "SkillTit": "C#",
-          "SkillVal": 80
+          "SkillVal": 85
         },
         {
           "SkillTit": ".NET Framework",
@@ -55,7 +55,7 @@
         },
         {
           "SkillTit": ".NET Core",
-          "SkillVal": 30
+          "SkillVal": 40
         },
         {
           "SkillTit": "SOAP Services",
@@ -85,7 +85,7 @@
         },
         {
           "SkillTit": "REST Services",
-          "SkillVal": 55
+          "SkillVal": 60
         }
       ]
     }
@@ -195,7 +195,7 @@
     "EmailTit": "Email",
     "EmailDesc": "dovannys@gmail.com",
     "HAddressTit": "Home Address",
-    "HAddressDesc": "Av. La Prensa N60-41, Quito, Ecuador",
+    "HAddressDesc": "Calle Pedro G. Moreno N59-158, Quito, Ecuador",
     "OAddressTit": "Office Address",
     "OAddressDesc": "Av. República, Edificio BGR, Piso 11",
     "NameHolder": "Full Name",

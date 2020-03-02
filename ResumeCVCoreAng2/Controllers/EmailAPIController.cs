@@ -25,98 +25,113 @@ namespace ResumeCVCoreAng2.Controllers
         [Route("sendmessage")]
         public JsonResult SendMessage(string name, string email, string message)
         {
-            var retorno = "OK";
-
-            //Obtener configuración
-            EmailConfigModel tmp = GetEmailConfig();
-
-            var mess = new MimeMessage();
-            mess.From.Add(new MailboxAddress(tmp.NameFrom, tmp.NameAuth));
-            mess.To.Add(new MailboxAddress(tmp.MailboxToName, tmp.MailboxToAddr));
-            mess.Subject = tmp.Subject + name + " <" + email + ">";
-
-            mess.Body = new TextPart("plain")
+            try
             {
-                Text = message
-            };
+                var retorno = "OK";
+                if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(message))
+                {
+                    //Obtener configuración
+                    EmailConfigModel tmp = GetEmailConfig();
 
-            using (var client = new SmtpClient())
-            {
-                // For suport all SSL certificates (including StartTls)
-                //client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+                    var mess = new MimeMessage();
+                    mess.From.Add(new MailboxAddress(tmp.NameFrom, tmp.NameAuth));
+                    mess.To.Add(new MailboxAddress(tmp.MailboxToName, tmp.MailboxToAddr));
+                    mess.Subject = tmp.Subject + name + " <" + email + ">";
 
-                try
-                {
-                    client.Connect(tmp.Host, tmp.Port, true);
-                }
-                catch (SmtpCommandException ex)
-                {
-                    retorno = ex.Message + ". " + ex.InnerException?.Message;
-                    _log.LogInformation(retorno);
-                    return Json(retorno);
-                }
-                catch (SmtpProtocolException ex)
-                {
-                    retorno = $"Protocol error while trying to connect: {ex.Message}";
-                    _log.LogInformation(retorno);
-                    return Json(retorno);
-                }
+                    mess.Body = new TextPart("plain")
+                    {
+                        Text = message
+                    };
 
-                if (client.Capabilities.HasFlag(SmtpCapabilities.Authentication))
-                {
-                    try
+                    using (var client = new SmtpClient())
                     {
-                        client.Authenticate(tmp.NameAuth, tmp.PasswAuth);
-                    }
-                    catch (AuthenticationException)
-                    {
-                        retorno = $"Invalid user name or password.";
-                        _log.LogInformation(retorno);
-                        return Json(retorno);
-                    }
-                    catch (SmtpCommandException ex)
-                    {
-                        retorno = $"Error trying to authenticate: {ex.Message}";
-                        _log.LogInformation(retorno);
-                        return Json(retorno);
-                    }
-                    catch (SmtpProtocolException ex)
-                    {
-                        retorno = $"Protocol error while trying to authenticate: {ex.Message}";
-                        _log.LogInformation(retorno);
-                        return Json(retorno);
-                    }
-                }
+                        // For suport all SSL certificates (including StartTls)
+                        client.ServerCertificateValidationCallback = (s, c, h, e) => true;
 
-                try
-                {
-                    client.Send(mess);
-                }
-                catch (SmtpCommandException ex)
-                {
-                    retorno = $"Error sending message: {ex.Message}\tStatusCode: {ex.StatusCode}";
-                    switch(ex.ErrorCode)
-                    {
-                        case SmtpErrorCode.RecipientNotAccepted:
-                            retorno += $"\tRecipient not accepted: {ex.Mailbox}";
-                            break;
-                        case SmtpErrorCode.SenderNotAccepted:
-                            retorno += $"\tSender not accepted: {ex.Mailbox}";
-                            break;
-                        case SmtpErrorCode.MessageNotAccepted:
-                            retorno += "\tMessage not accepted.";
-                            break;
+                        //client.CheckCertificateRevocation = false;
+
+                        try
+                        {
+                            client.Connect(tmp.Host, tmp.Port, true);
+                        }
+                        catch (SmtpCommandException ex)
+                        {
+                            retorno = ex.Message + ". " + ex.InnerException?.Message;
+                            _log.LogError(retorno);
+                            return Json(retorno);
+                        }
+                        catch (SmtpProtocolException ex)
+                        {
+                            retorno = $"Protocol error while trying to connect: {ex.Message}";
+                            _log.LogError(retorno);
+                            return Json(retorno);
+                        }
+
+                        if (client.Capabilities.HasFlag(SmtpCapabilities.Authentication))
+                        {
+                            try
+                            {
+                                client.Authenticate(tmp.NameAuth, tmp.PasswAuth);
+                            }
+                            catch (AuthenticationException)
+                            {
+                                retorno = $"Invalid user name or password.";
+                                _log.LogError(retorno);
+                                return Json(retorno);
+                            }
+                            catch (SmtpCommandException ex)
+                            {
+                                retorno = $"Error trying to authenticate: {ex.Message}";
+                                _log.LogError(retorno);
+                                return Json(retorno);
+                            }
+                            catch (SmtpProtocolException ex)
+                            {
+                                retorno = $"Protocol error while trying to authenticate: {ex.Message}";
+                                _log.LogError(retorno);
+                                return Json(retorno);
+                            }
+                        }
+
+                        try
+                        {
+                            client.Send(mess);
+                        }
+                        catch (SmtpCommandException ex)
+                        {
+                            retorno = $"Error sending message: {ex.Message}\tStatusCode: {ex.StatusCode}";
+                            switch (ex.ErrorCode)
+                            {
+                                case SmtpErrorCode.RecipientNotAccepted:
+                                    retorno += $"\tRecipient not accepted: {ex.Mailbox}";
+                                    break;
+                                case SmtpErrorCode.SenderNotAccepted:
+                                    retorno += $"\tSender not accepted: {ex.Mailbox}";
+                                    break;
+                                case SmtpErrorCode.MessageNotAccepted:
+                                    retorno += "\tMessage not accepted.";
+                                    break;
+                            }
+                            _log.LogError(retorno);
+                        }
+                        catch (SmtpProtocolException ex)
+                        {
+                            retorno = $"Protocol error while sending message: {ex.Message}";
+                            _log.LogError(retorno);
+                        }
+                        client.Disconnect(true);
                     }
-                    _log.LogInformation(retorno);
-                }
-                catch (SmtpProtocolException ex)
+                }                                
+                else
                 {
-                    retorno = $"Protocol error while sending message: {ex.Message}";
-                    _log.LogInformation(retorno);
+                    retorno = "No enviado, parámetros erroneos.";
                 }
-                client.Disconnect(true);
+                return Json(retorno);
             }
-            return Json(retorno);
+            catch (System.Exception ex)
+            {
+                return Json(ex.Message);
+            }            
         }
     }
 }
