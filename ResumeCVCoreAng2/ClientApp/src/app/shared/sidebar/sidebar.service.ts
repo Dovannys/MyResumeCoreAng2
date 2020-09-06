@@ -71,7 +71,7 @@ export class SidebarService {
         this.http.get('api/LangAPI/getpdf/' + id, { headers: headers, responseType: "blob" })
             .subscribe((data) => {
                 console.log(data);
-                var blob = new Blob([data], { type: "application/pdf" });
+                const blob = new Blob([data], { type: "application/pdf" });
                 FileSaver.saveAs(blob, fileName);
             });                    
     }    
