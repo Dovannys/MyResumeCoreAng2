@@ -15,7 +15,7 @@ namespace ResumeCVCoreAng2.Controllers
         readonly ILogger<EmailAPIController> _log;
 
         #region Contructores
-        public EmailAPIController(IHostingEnvironment env, ILogger<EmailAPIController> log)
+        public EmailAPIController(IWebHostEnvironment env, ILogger<EmailAPIController> log)
             : base(env)
         {
             _log = log;

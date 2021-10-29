@@ -14,7 +14,7 @@ namespace ResumeCVCoreAng2.Controllers
     public class LangAPIController : BaseAPIController
     {
         #region Contructores
-        public LangAPIController(IHostingEnvironment env)
+        public LangAPIController(IWebHostEnvironment env)
             : base(env)
         {
         }

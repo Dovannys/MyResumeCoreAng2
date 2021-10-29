@@ -10,9 +10,9 @@ namespace ResumeCVCoreAng2.Controllers
     [Route("api/BaseAPI")]
     public class BaseAPIController : Controller
     {
-        public IHostingEnvironment _env;
+        public IWebHostEnvironment _env;
 
-        public BaseAPIController(IHostingEnvironment env)
+        public BaseAPIController(IWebHostEnvironment env)
         {
             _env = env;
         }

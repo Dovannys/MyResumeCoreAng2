@@ -14,7 +14,7 @@ namespace ResumeCVCoreAng2.Test
         public void GetAllRetrieveEnglish()
         {
             // Arrange
-            var env = new Mock<IHostingEnvironment>();
+            var env = new Mock<IWebHostEnvironment>();
             env.Setup(x => x.WebRootPath).Returns(@"C:\Proyectos\ResumeCV\ResumeCVCoreAng2\ResumeCVCoreAng2\wwwroot");
             var obj = new LangAPIController(env.Object);
             var expected = "en";
@@ -29,7 +29,7 @@ namespace ResumeCVCoreAng2.Test
         public void GetAllRetrieveSpanish()
         {
             // Arrange
-            var env = new Mock<IHostingEnvironment>();
+            var env = new Mock<IWebHostEnvironment>();
             env.Setup(x => x.WebRootPath).Returns(@"C:\Proyectos\ResumeCV\ResumeCVCoreAng2\ResumeCVCoreAng2\wwwroot");
             var obj = new LangAPIController(env.Object);
             var expected = "es";
@@ -45,7 +45,7 @@ namespace ResumeCVCoreAng2.Test
         public void GetAllRetrieveErrorWithNullParameter()
         {
             // Arrange
-            var env = new Mock<IHostingEnvironment>();
+            var env = new Mock<IWebHostEnvironment>();
             env.Setup(x => x.WebRootPath).Returns(@"C:\Proyectos\ResumeCV\ResumeCVCoreAng2\ResumeCVCoreAng2\wwwroot");
             var obj = new LangAPIController(env.Object);
             string expected = null;
@@ -61,7 +61,7 @@ namespace ResumeCVCoreAng2.Test
         public void GetAllRetrieveErrorWithEmptyParameter()
         {
             // Arrange
-            var env = new Mock<IHostingEnvironment>();
+            var env = new Mock<IWebHostEnvironment>();
             env.Setup(x => x.WebRootPath).Returns(@"C:\Proyectos\ResumeCV\ResumeCVCoreAng2\ResumeCVCoreAng2\wwwroot");
             var obj = new LangAPIController(env.Object);
             string expected = "";
