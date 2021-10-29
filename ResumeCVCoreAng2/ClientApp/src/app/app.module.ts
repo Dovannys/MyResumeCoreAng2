@@ -15,7 +15,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { JournalComponent } from './journal/journal.component';
 import { ContactComponent } from './contact/contact.component';
-import { Ng2PageScrollModule } from 'ng2-page-scroll';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 @NgModule({
   declarations: [
     AppComponent,    
@@ -33,7 +33,7 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     ReactiveFormsModule,
-    Ng2PageScrollModule.forRoot(),
+    NgxPageScrollModule,
     RouterModule.forRoot([
       { path: 'home/:id', component: HomeComponent },
       { path: '', redirectTo: 'home/en', pathMatch: 'full' },      

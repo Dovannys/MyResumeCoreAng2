@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
 import { SidebarType, DownloadType } from './sidebar.type';
 import { SidebarService } from './sidebar.service';
-import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ng2-page-scroll';
+import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ngx-page-scroll';
 import { DOCUMENT } from "@angular/platform-browser";
 
 
