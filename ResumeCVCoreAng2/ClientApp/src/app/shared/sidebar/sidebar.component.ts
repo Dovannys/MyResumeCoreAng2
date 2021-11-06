@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
 import { SidebarType, DownloadType } from './sidebar.type';
 import { SidebarService } from './sidebar.service';
-import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ngx-page-scroll';
-import { DOCUMENT } from "@angular/platform-browser";
+import { PageScrollService } from 'ngx-page-scroll-core';
+import { DOCUMENT } from "@angular/common";
 
 
 @Component({
@@ -55,7 +55,11 @@ export class SidebarComponent implements OnInit {
     scrollTo(selector) {
         //console.log("selector: "+selector+");
 
-      let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, selector);
-      this.pageScrollService.start(pageScrollInstance);
+      //let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, selector);
+      //this.pageScrollService.start(pageScrollInstance);
+      this.pageScrollService.scroll({
+        document: this.document,
+        scrollTarget: selector
+      });
     }
 }

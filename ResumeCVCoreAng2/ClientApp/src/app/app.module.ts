@@ -15,7 +15,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { JournalComponent } from './journal/journal.component';
 import { ContactComponent } from './contact/contact.component';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+
 @NgModule({
   declarations: [
     AppComponent,    
@@ -33,7 +34,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     ReactiveFormsModule,
-    NgxPageScrollModule,
+    NgxPageScrollCoreModule,
     RouterModule.forRoot([
       { path: 'home/:id', component: HomeComponent },
       { path: '', redirectTo: 'home/en', pathMatch: 'full' },      

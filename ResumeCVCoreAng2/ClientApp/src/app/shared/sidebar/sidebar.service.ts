@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as FileSaver from 'file-saver';
 //import { Observable } from 'rxjs/Observable';
-import 'rxjs/Rx';
+//import 'rxjs/Rx';
 
 @Injectable()
 export class SidebarService {
